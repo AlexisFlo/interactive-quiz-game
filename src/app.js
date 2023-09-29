@@ -1,4 +1,4 @@
-const quizData = [
+let quizData = [
   {
     question: "What is the capital of France?",
     answers: ["London", "Paris", "Berlin", "Madrid"],
@@ -35,8 +35,12 @@ let timerInterval;
 const questionText = document.getElementById("question-text");
 const answerOptions = document.getElementById("answer-options");
 const scoreText = document.getElementById("score");
+const restartButton = document.createElement("button");
 const nextButton = document.getElementById("next-button");
 const timerText = document.getElementById("timer");
+
+// Shuffle the quizData array
+quizData.sort(() => Math.random() - 0.5);
 
 // Load the first question
 function loadQuestion() {
@@ -55,6 +59,9 @@ function loadQuestion() {
     });
     answerOptions.appendChild(answerButton);
   });
+
+  restartButton.style.display = "none";
+  answerOptions.appendChild(restartButton);
 
   // Start the timer  
   timeLeft = 10;
@@ -84,6 +91,19 @@ function checkAnswer(answer) {
   }
 }
 
+function restartQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
+  loadQuestion();
+  scoreText.textContent = `Score: ${score}`;
+  
+  // Check if the restartButton exists in the DOM
+  const restartButton = document.getElementById("restart-button");
+  if (restartButton) {
+    restartButton.style.display = "none";
+  }
+}
+
 // Show the results
 function showResults() {
   questionText.textContent = "Quiz finished!";
@@ -96,12 +116,7 @@ function showResults() {
   // Add a button for restarting the quiz
   const restartButton = document.createElement("button");
   restartButton.textContent = "Restart Quiz";
-  restartButton.addEventListener("click", () => {
-    currentQuestionIndex = 0;
-    score = 0;
-    scoreText.textContent = "";
-    nextButton.style.display = "block";
-  });
+  restartButton.addEventListener("click", restartQuiz);
   answerOptions.appendChild(restartButton);
 }
 
