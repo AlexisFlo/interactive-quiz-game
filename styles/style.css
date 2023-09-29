@@ -70,3 +70,43 @@ header {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  /* Reduce font size of question text */
+  #question-text {
+    font-size: 1.5rem;
+  }
+
+  /* Reduce font size of answer buttons */
+  .answer-button {
+    font-size: 1rem;
+  }
+
+  /* Center answer buttons */
+  #answer-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Reduce padding of answer buttons */
+  .answer-button {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Reduce font size of score text */
+  #score-text {
+    font-size: 1.5rem;
+  }
+
+  /* Reduce font size of timer text */
+  #timer-text {
+    font-size: 1.5rem;
+  }
+
+  /* Center next button */
+  #next-button {
+    margin: 1rem auto 0;
+  }
+}
