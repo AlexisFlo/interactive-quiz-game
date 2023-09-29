@@ -1,0 +1,71 @@
+/* Style the header */
+header {
+  background: linear-gradient(to right, #2d3436, #008080);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Center the quiz container vertically and horizontally */
+.quiz-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* Style the question text */
+#question-text {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Style the answer options */
+.answer-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Style the answer buttons */
+.answer-options button {
+  padding: 1rem 2rem;
+  background-color: #2d3436;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.answer-options button:hover {
+  background-color: #008080;
+  color: #f7ffc7;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the score text */
+#score {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Style the next button */
+#next-button {
+  padding: 1rem 2rem;
+  background-color: #2d3436;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 2rem;
+}
+
+#next-button:hover {
+  background-color: #008080;
+  color: #f7ffc7;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
