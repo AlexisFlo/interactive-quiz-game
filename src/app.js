@@ -53,7 +53,7 @@ let quizData = [
 // Initialize variables
 let currentQuestionIndex = 0;
 let score = 0;
-let timeLeft = 10;
+let timeLeft = 20;
 let timerInterval;
 
 
