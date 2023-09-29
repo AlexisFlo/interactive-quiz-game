@@ -90,7 +90,7 @@ function loadQuestion() {
   answerOptions.appendChild(restartButton);
 
   // Start the timer  
-  timeLeft = 10;
+  timeLeft = 20;
   timerText.textContent = `Time left: ${timeLeft} seconds`;
   clearInterval(timerInterval);
   timerInterval = setInterval(() => {
