@@ -13,14 +13,40 @@ let quizData = [
     question: "What is the currency of Japan?",
     answers: ["Yuan", "Yen", "Dollar", "Euro"],
     correctAnswer: "Yen",
-  },{
+  },
+  {
     question: "What is the largest planet in our solar system?",
     answers: ["Mars", "Jupiter", "Venus", "Saturn"],
     correctAnswer: "Jupiter",
-  }, {
+  }, 
+  {
     question: "What is the smallest country in the world?",
     answers: ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
     correctAnswer: "Vatican City",
+  },
+  {
+    question: "Which renewable energy source harnesses the energy from the sun to generate electricity?",
+    answers: ["Wind power", "Biomass energy", "Solar Power", "Geothermal"],
+    correctAnswer: "Solar Power",
+  },
+  {
+    question: "Which greenhouse gas is primarily responsible for global warming?",
+    answers: ["Oxygen (O2)", "Nitrogen (N2)", "Methane (CH4)", "Carbon dioxide (CO2)"],
+    correctAnswer: "Carbon dioxide (CO2)",
+  },
+  {
+    question: "What is the grammatical term for a word that joins words, phrases, or clauses together in a sentence?",
+    answers: ["Adjective", "Verb", "Conjunction", "Preposition"],
+    correctAnswer: "Conjunction",
+  },{
+    question:"What is the BPM (Beats Per Minute) range typically associated with hardstyle music?",
+    answers: ["100-120 BPM", "160-180 BPM", "200-220 BPM", "130-150 BPM"],
+    correctAnswer: "130-150 BPM",
+  },
+  {
+    question: "What distinguishes hardstyle from other electronic dance music genres, such as trance or house?",
+    answers: ["Its use of organic instruments.", "Its slower tempo and melodic elements.", "Its heavy use of distorted kicks and energetic synth melodies.", "Its focus on ambient and atmospheric sounds."],
+    correctAnswer: "Its heavy use of distorted kicks and energetic synth melodies.",
   }
 ];
 
